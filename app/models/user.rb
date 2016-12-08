@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   devise :token_authenticatable, :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable,
-    :omniauthable, omniauth_providers: [:facebook]
+    :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
 
   has_many :task_lists, foreign_key: :owner_id
 
