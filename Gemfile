@@ -15,6 +15,7 @@ gem 'slim'
 gem 'active_model_serializers'
 gem 'jquery-ui-rails', '= 4.0.3'
 gem 'acts_as_list'
+gem 'omniauth-facebook'
 
 group :doc do
   gem 'sdoc', require: false
